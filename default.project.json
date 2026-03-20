@@ -1,0 +1,54 @@
+{
+  "name": "launch_a_nuke",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "controllers": {
+        "$path": "src/replicatedstorage/controllers"
+      },
+      "templates": {
+        "$path": "src/replicatedstorage/templates"
+      },
+      "utils": {
+        "$path": "src/replicatedstorage/utils"
+      },
+      "services": {
+        "$path": "src/replicatedstorage/services"
+      },
+      "packages": {
+          "$path": "src/shared/packages"
+      }
+    },
+
+    "ServerScriptService": {
+      "Game": {
+        "$path": "src/server/game"
+      },
+      "Server": {
+        "$path": "src/server/init"
+      },
+      "Services": {
+        "$path": "src/server/services"
+      },
+      "Templates": {
+          "$path": "src/server/templates"
+      },
+      "ServerPackages": {
+          "$path": "src/shared/serverpackages"
+      }
+    },
+
+    "ServerStorage": {
+      "$path": "src/serverstorage"
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    }
+  }
+}
