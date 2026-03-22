@@ -4,15 +4,14 @@ local Packets = require(ReplicatedStorage.utils.Packets)
 
 local _debug = true
 
-
-local self = {}
-self.loaded = Signal.new()
+local loadController = {}
+loadController.loaded = Signal.new()
 
 shared.loaded:Connect(function()
 	local result = Packets.LoadEvent:Fire()
 	if result then
-		self.loaded:Fire(result)
+		loadController.loaded:Fire(result)
 	end
 end)
 
-return self
+return loadController
